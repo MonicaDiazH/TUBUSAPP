@@ -1,6 +1,6 @@
 webpackJsonp([11],{
 
-/***/ 330:
+/***/ 328:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InicioPageModule", function() { return InicioPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__inicio__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__inicio__ = __webpack_require__(342);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var InicioPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 344:
+/***/ 342:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72,7 +72,7 @@ var InicioPage = /** @class */ (function () {
     };
     InicioPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-inicio',template:/*ion-inline-start:"C:\Dev\tuBusApp\src\pages\inicio\inicio.html"*/'<!--\n  Generated template for the InicioPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Inicio</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Dev\tuBusApp\src\pages\inicio\inicio.html"*/,
+            selector: 'page-inicio',template:/*ion-inline-start:"C:\git\TUBUSAPP\src\pages\inicio\inicio.html"*/'<!--\n\n  Generated template for the InicioPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Inicio</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-grid>\n\n\n\n    <ion-row>\n\n      <ion-col style="background:#d36a6a" col-12>\n\n        <button ion-button icon-start clear full>\n\n          <ion-icon name="person" align-self: center></ion-icon>\n\n            <p>Perfil</p>\n\n        </button>\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n    <ion-row>\n\n      <ion-col style="background:#8a5ff091" col-12 >\n\n        <button ion-button icon-start clear full>\n\n          <ion-icon name="map"></ion-icon>\n\n            Ruta Buses\n\n        </button>\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n    <ion-row>\n\n        <ion-col style="background:#a5b60d91" col-12 >\n\n          <button ion-button icon-start clear full>\n\n            <ion-icon name="barcode"></ion-icon>\n\n              Tickets\n\n          </button>    \n\n        </ion-col>\n\n    </ion-row>\n\n\n\n      <ion-row>\n\n          <ion-col style="background:#127c9c91" col-12 >\n\n            <button ion-button icon-start clear full>\n\n              <ion-icon name="information-circle"></ion-icon>\n\n                Horarios y tarifas\n\n            </button>\n\n          </ion-col>\n\n      </ion-row>\n\n\n\n  </ion-grid> \n\n</ion-content>\n\n'/*ion-inline-end:"C:\git\TUBUSAPP\src\pages\inicio\inicio.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], InicioPage);

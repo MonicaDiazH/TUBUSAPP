@@ -3,14 +3,18 @@ page-inicio {
         padding: 50px;
         border: 1px solid #ddd;
         border-radius: 2px;
-        text-align: center;
+        
       }
-
+        
       .button{
         padding-left: 0%;  
         padding-top: 0%; 
         font-size:25px; 
         color: #FFFFFF;
-        
+    }
+      .ion-icon{
+        align-self: left;
+        //text-align: left;
       }
+
 }

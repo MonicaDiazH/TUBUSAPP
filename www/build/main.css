@@ -25678,7 +25678,6 @@ page-inicio .col {
   padding: 50px;
   border: 1px solid #ddd;
   border-radius: 2px;
-  text-align: center;
 }
 
 page-inicio .button {
@@ -25686,6 +25685,12 @@ page-inicio .button {
   padding-top: 0%;
   font-size: 25px;
   color: #FFFFFF;
+}
+
+page-inicio .ion-icon {
+  -webkit-align-self: left;
+  -ms-flex-item-align: left;
+  align-self: left;
 }
 
 page-item-create .profile-image-wrapper {
