@@ -9,7 +9,6 @@
   <ion-navbar>
     <ion-title>Inicio</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
@@ -17,26 +16,26 @@
   <ion-grid>
 
     <ion-row>
-      <ion-col style="background:#d36a6a" col-12>
-        <button ion-button icon-start clear full>
-          <ion-icon name="person" align-self: center></ion-icon>
+      <ion-col style="background:#F04439" col-12>
+        <button ion-button icon-start clear [navPush]="perfilPage">
+          <ion-icon name="person"></ion-icon>
             <p>Perfil</p>
         </button>
       </ion-col>
     </ion-row>
 
     <ion-row>
-      <ion-col style="background:#8a5ff091" col-12 >
-        <button ion-button icon-start clear full>
+      <ion-col style="background:#CA283E" col-12 >
+        <button ion-button icon-start clear [navPush]="rutasPage">
           <ion-icon name="map"></ion-icon>
-            Ruta Buses
+         Ruta Buses
         </button>
       </ion-col>
     </ion-row>
 
     <ion-row>
-        <ion-col style="background:#a5b60d91" col-12 >
-          <button ion-button icon-start clear full>
+        <ion-col style="background:#820233" col-12 >
+          <button ion-button icon-start clear [navPush]="ticketsPage">
             <ion-icon name="barcode"></ion-icon>
               Tickets
           </button>    
@@ -44,13 +43,12 @@
     </ion-row>
 
       <ion-row>
-          <ion-col style="background:#127c9c91" col-12 >
-            <button ion-button icon-start clear full>
+          <ion-col style="background:#540032" col-12 >
+            <button ion-button icon-start clear [navPush]="horariosPage">
               <ion-icon name="information-circle"></ion-icon>
                 Horarios y tarifas
             </button>
           </ion-col>
       </ion-row>
-
   </ion-grid> 
 </ion-content>

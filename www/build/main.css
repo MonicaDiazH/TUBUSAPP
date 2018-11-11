@@ -25683,8 +25683,9 @@ page-inicio .col {
 page-inicio .button {
   padding-left: 0%;
   padding-top: 0%;
-  font-size: 25px;
+  font-size: 20px;
   color: #FFFFFF;
+  text-align: left;
 }
 
 page-inicio .ion-icon {
@@ -25734,6 +25735,10 @@ page-item-detail .item-detail {
   width: 100%;
   background: white;
   position: absolute;
+}
+
+page-perfil .navbar {
+  color: "#F04439";
 }
 
 page-tutorial .toolbar-background {
