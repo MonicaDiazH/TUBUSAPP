@@ -1,0 +1,7 @@
+{
+  "name": "tuBusApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
