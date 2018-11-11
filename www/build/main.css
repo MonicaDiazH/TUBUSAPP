@@ -25674,6 +25674,20 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+page-inicio .col {
+  padding: 50px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  text-align: center;
+}
+
+page-inicio .button {
+  padding-left: 0%;
+  padding-top: 0%;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
 page-item-create .profile-image-wrapper {
   text-align: center;
   margin: 20px 0;
