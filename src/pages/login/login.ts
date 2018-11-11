@@ -15,8 +15,8 @@ export class LoginPage {
   // If you're using the username field with or without email, make
   // sure to add it to the type
   account: { email: string, password: string } = {
-    email: 'test@example.com',
-    password: 'test'
+    email: 'fyg@udb-estudiantes.com',
+    password: 'tescxascst'
   };
 
   // Our translated text strings
@@ -27,9 +27,9 @@ export class LoginPage {
     public toastCtrl: ToastController,
     public translateService: TranslateService) {
 
-    this.translateService.get('LOGIN_ERROR').subscribe((value) => {
+   /* this.translateService.get('LOGIN_ERROR').subscribe((value) => {
       this.loginErrorString = value;
-    })
+    })*/
   }
 
   // Attempt to login in through our User service

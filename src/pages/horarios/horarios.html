@@ -9,10 +9,19 @@
   <ion-navbar color="horarios"> 
     <ion-title>Horarios y Tarifas</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list>
+        <ion-item *ngFor="let item of items">
+          <ion-thumbnail item-start>
+            <img src="assets/img/bus-stop.png">
+          </ion-thumbnail>
+          <h2>{{item}}</h2>
+          <button ion-button clear item-end>Info</button>
+        </ion-item>
+      </ion-list>
+
 
 </ion-content>

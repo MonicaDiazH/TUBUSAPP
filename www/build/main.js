@@ -1,4 +1,4 @@
-webpackJsonp([18],{
+webpackJsonp([19],{
 
 /***/ 118:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -43,14 +43,18 @@ webpackEmptyAsyncContext.id = 130;
 var map = {
 	"../pages/cards/cards.module": [
 		328,
-		17
+		18
 	],
 	"../pages/content/content.module": [
 		329,
+		17
+	],
+	"../pages/detalleruta/detalleruta.module": [
+		330,
 		16
 	],
 	"../pages/horarios/horarios.module": [
-		330,
+		331,
 		15
 	],
 	"../pages/inicio/inicio.module": [
@@ -58,59 +62,59 @@ var map = {
 		14
 	],
 	"../pages/item-create/item-create.module": [
-		331,
+		333,
 		13
 	],
 	"../pages/item-detail/item-detail.module": [
-		333,
+		334,
 		12
 	],
 	"../pages/list-master/list-master.module": [
-		334,
+		335,
 		11
 	],
 	"../pages/login/login.module": [
-		335,
+		336,
 		10
 	],
 	"../pages/menu/menu.module": [
-		336,
+		337,
 		9
 	],
 	"../pages/perfil/perfil.module": [
-		337,
+		338,
 		8
 	],
 	"../pages/rutas/rutas.module": [
-		338,
+		339,
 		7
 	],
 	"../pages/search/search.module": [
-		339,
+		340,
 		6
 	],
 	"../pages/settings/settings.module": [
-		340,
+		341,
 		5
 	],
 	"../pages/signup/signup.module": [
-		341,
+		342,
 		4
 	],
 	"../pages/tabs/tabs.module": [
-		342,
+		343,
 		3
 	],
 	"../pages/tickets/tickets.module": [
-		343,
+		344,
 		2
 	],
 	"../pages/tutorial/tutorial.module": [
-		344,
+		345,
 		1
 	],
 	"../pages/welcome/welcome.module": [
-		345,
+		346,
 		0
 	]
 };
@@ -306,7 +310,7 @@ var Items = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return Tab2Root; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Tab3Root; });
 // The page the user lands on after opening the app and without a session
-var FirstRunPage = 'InicioPage';
+var FirstRunPage = 'TutorialPage';
 // The main page the user will see as they use the app over a long period of time.
 // Change this if not using tabs
 var MainPage = 'TabsPage';
@@ -412,9 +416,10 @@ var AppModule = /** @class */ (function () {
                     links: [
                         { loadChildren: '../pages/cards/cards.module#CardsPageModule', name: 'CardsPage', segment: 'cards', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/content/content.module#ContentPageModule', name: 'ContentPage', segment: 'content', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/detalleruta/detalleruta.module#DetallerutaPageModule', name: 'DetallerutaPage', segment: 'detalleruta', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/horarios/horarios.module#HorariosPageModule', name: 'HorariosPage', segment: 'horarios', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/item-create/item-create.module#ItemCreatePageModule', name: 'ItemCreatePage', segment: 'item-create', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/inicio/inicio.module#InicioPageModule', name: 'InicioPage', segment: 'inicio', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/item-create/item-create.module#ItemCreatePageModule', name: 'ItemCreatePage', segment: 'item-create', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/item-detail/item-detail.module#ItemDetailPageModule', name: 'ItemDetailPage', segment: 'item-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/list-master/list-master.module#ListMasterPageModule', name: 'ListMasterPage', segment: 'list-master', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
