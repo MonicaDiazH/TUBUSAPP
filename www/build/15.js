@@ -98,12 +98,11 @@ var HorariosPage = /** @class */ (function () {
     };
     HorariosPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-horarios',template:/*ion-inline-start:"C:\git\TUBUSAPP\src\pages\horarios\horarios.html"*/'<!--\n\n  Generated template for the HorariosPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="horarios"> \n\n    <ion-title>Horarios y Tarifas</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>\n\n    <ion-list>\n\n        <ion-item *ngFor="let item of items">\n\n          <ion-thumbnail item-start>\n\n            <img src="assets/img/bus-stop.png">\n\n          </ion-thumbnail>\n\n          <h2>{{item.title}}</h2>\n\n          <button ion-button clear item-end (click)="openItem(item)">Info</button>\n\n        </ion-item>\n\n      </ion-list>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\git\TUBUSAPP\src\pages\horarios\horarios.html"*/,
+            selector: 'page-horarios',template:/*ion-inline-start:"D:\git\TUBUSAPP\TUBUSAPP\src\pages\horarios\horarios.html"*/'<!--\n\n  Generated template for the HorariosPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="horarios"> \n\n    <ion-title>Horarios y Tarifas</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-searchbar placeholder="Buscar Ruta de Bus" (ionInput)="getItems($event)"></ion-searchbar>\n\n    <ion-list>\n\n        <ion-item *ngFor="let item of items">\n\n          <ion-thumbnail item-start>\n\n            <img src="assets/img/bus-stop.png">\n\n          </ion-thumbnail>\n\n          <h2>{{item.title}}</h2>\n\n          <button ion-button clear item-end (click)="openItem(item)">Info</button>\n\n        </ion-item>\n\n      </ion-list>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\git\TUBUSAPP\TUBUSAPP\src\pages\horarios\horarios.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], HorariosPage);
     return HorariosPage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=horarios.js.map

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Items } from '../../providers';
 
 /**
  * Generated class for the RutasPage page.
@@ -16,7 +17,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class RutasPage {
   detallerutaPage ="DetallerutaPage";
   searchQuery: string = '';
-  items: string[];
+  items: Array<any>;
 
    constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.initializeItems();
@@ -24,14 +25,11 @@ export class RutasPage {
 
   initializeItems() {
     this.items = [
-      'Ruta 44',
-      'Ruta 101 B',
-      'Ruta 30 B',
-      'Ruta 101 D',
-      'Ruta 108',
-      'Ruta 52',
-      'Ruta 53',
-      'Ruta 46 C',
+      {'id':'01','title':'Ruta 44', 'tarifa':'$0.25 ctvs', 'tiempo':'5 min','recorrido':'De Santa Tecla a San Salvador','distancia':'2 km'},
+      {'id':'02','title':'Ruta 101 B', 'tarifa':'$0.25 ctvs', 'tiempo':'20 min','recorrido':'De Santa Tecla al Centro de San Salvador','distancia':'10 km'},
+      {'id':'03','title':'Ruta 30 B', 'tarifa':'$0.25 ctvs', 'tiempo':'1 min','recorrido':'De Santa Tecla al Centro de San Salvador','distancia':'0.5 km'},
+      {'id':'04','title':'Ruta 101 D', 'tarifa':'$0.25 ctvs', 'tiempo':'3 min','recorrido':'De Santa Tecla al Centro de San Salvador','distancia':'1 km'},
+      {'id':'05','title':'Ruta 108', 'tarifa':'$0.76 ctvs', 'tiempo':'10 min','recorrido':'De San Juan Opico a San Salvador','distancia':'5 km'},
     ];
   }
 
@@ -45,9 +43,13 @@ export class RutasPage {
     // if the value is an empty string don't filter the items
     if (val && val.trim() != '') {
       this.items = this.items.filter((item) => {
-        return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
+        return (item.title.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
     }
+  }
+
+  openItem(item) {
+    this.navCtrl.push('DetallerutaPage', { item: item });
   }
 
   ionViewDidLoad() {
