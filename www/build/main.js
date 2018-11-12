@@ -1,4 +1,4 @@
-webpackJsonp([19],{
+webpackJsonp([20],{
 
 /***/ 118:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -42,71 +42,75 @@ webpackEmptyAsyncContext.id = 130;
 
 var map = {
 	"../pages/cards/cards.module": [
+		329,
+		19
+	],
+	"../pages/content/content.module": [
 		328,
 		18
 	],
-	"../pages/content/content.module": [
-		329,
+	"../pages/detallehorario/detallehorario.module": [
+		330,
 		17
 	],
 	"../pages/detalleruta/detalleruta.module": [
-		330,
+		331,
 		16
 	],
 	"../pages/horarios/horarios.module": [
-		331,
+		332,
 		15
 	],
 	"../pages/inicio/inicio.module": [
-		332,
+		333,
 		14
 	],
 	"../pages/item-create/item-create.module": [
-		333,
+		334,
 		13
 	],
 	"../pages/item-detail/item-detail.module": [
-		334,
+		335,
 		12
 	],
 	"../pages/list-master/list-master.module": [
-		335,
+		336,
 		11
 	],
 	"../pages/login/login.module": [
-		336,
+		337,
 		10
 	],
 	"../pages/menu/menu.module": [
-		337,
+		338,
 		9
 	],
 	"../pages/perfil/perfil.module": [
-		338,
+		339,
 		8
 	],
 	"../pages/rutas/rutas.module": [
-		339,
+		340,
 		7
 	],
 	"../pages/search/search.module": [
-		340,
+		341,
 		6
 	],
 	"../pages/settings/settings.module": [
-		341,
+		342,
 		5
 	],
 	"../pages/signup/signup.module": [
-		342,
+		343,
 		4
 	],
 	"../pages/tabs/tabs.module": [
-		343,
+		344,
 		3
 	],
 	"../pages/tickets/tickets.module": [
-		344,
+		346,
 		2
 	],
 	"../pages/tutorial/tutorial.module": [
@@ -114,7 +118,7 @@ var map = {
 		1
 	],
 	"../pages/welcome/welcome.module": [
-		346,
+		347,
 		0
 	]
 };
@@ -414,8 +418,9 @@ var AppModule = /** @class */ (function () {
                 }),
                 __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_12__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/cards/cards.module#CardsPageModule', name: 'CardsPage', segment: 'cards', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/content/content.module#ContentPageModule', name: 'ContentPage', segment: 'content', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/cards/cards.module#CardsPageModule', name: 'CardsPage', segment: 'cards', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/detallehorario/detallehorario.module#DetallehorarioPageModule', name: 'DetallehorarioPage', segment: 'detallehorario', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/detalleruta/detalleruta.module#DetallerutaPageModule', name: 'DetallerutaPage', segment: 'detalleruta', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/horarios/horarios.module#HorariosPageModule', name: 'HorariosPage', segment: 'horarios', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/inicio/inicio.module#InicioPageModule', name: 'InicioPage', segment: 'inicio', priority: 'low', defaultHistory: [] },
@@ -430,8 +435,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/tickets/tickets.module#TicketsPageModule', name: 'TicketsPage', segment: 'tickets', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tutorial/tutorial.module#TutorialPageModule', name: 'TutorialPage', segment: 'tutorial', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/tickets/tickets.module#TicketsPageModule', name: 'TicketsPage', segment: 'tickets', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
                     ]
                 }),

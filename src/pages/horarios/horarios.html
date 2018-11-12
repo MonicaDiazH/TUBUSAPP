@@ -18,8 +18,8 @@
           <ion-thumbnail item-start>
             <img src="assets/img/bus-stop.png">
           </ion-thumbnail>
-          <h2>{{item}}</h2>
-          <button ion-button clear item-end>Info</button>
+          <h2>{{item.title}}</h2>
+          <button ion-button clear item-end (click)="openItem(item)">Info</button>
         </ion-item>
       </ion-list>
 

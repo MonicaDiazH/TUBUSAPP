@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Items } from '../../providers';
 
 /**
  * Generated class for the HorariosPage page.
@@ -16,7 +17,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class HorariosPage {
 
   searchQuery: string = '';
-  items: string[];
+  items: Array<any>;
+  
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.initializeItems();
@@ -24,14 +26,11 @@ export class HorariosPage {
 
   initializeItems() {
     this.items = [
-      'Ruta 44',
-      'Ruta 101 B',
-      'Ruta 30 B',
-      'Ruta 101 D',
-      'Ruta 108',
-      'Ruta 52',
-      'Ruta 53',
-      'Ruta 46 C',
+      {'id':'01','title':'Ruta 44', 'tarifa':'$0.25 ctvs', 'horario':'De 8:00 a.m. a 10:00 p.m.','recorrido':'De Santa Tecla a San Salvador'},
+      {'id':'02','title':'Ruta 101 B', 'tarifa':'$0.25 ctvs', 'horario':'De 8:00 a.m. a 10:00 p.m.','recorrido':'De Santa Tecla al Centro de San Salvador'},
+      {'id':'03','title':'Ruta 30 B', 'tarifa':'$0.25 ctvs', 'horario':'De 8:00 a.m. a 10:00 p.m.','recorrido':'De Santa Tecla al Centro de San Salvador'},
+      {'id':'04','title':'Ruta 101 D', 'tarifa':'$0.25 ctvs', 'horario':'De 8:00 a.m. a 10:00 p.m.','recorrido':'De Santa Tecla al Centro de San Salvador'},
+      {'id':'05','title':'Ruta 108', 'tarifa':'$0.76 ctvs', 'horario':'De 5:00 a.m. a 10:00 p.m.','recorrido':'De San Juan Opico a San Salvador'},
     ];
   }
 
@@ -45,9 +44,13 @@ export class HorariosPage {
     // if the value is an empty string don't filter the items
     if (val && val.trim() != '') {
       this.items = this.items.filter((item) => {
-        return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
+        return (item.title.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
     }
+  }
+  
+  openItem(item) {
+    this.navCtrl.push('DetallehorarioPage', { item: item });
   }
 
   ionViewDidLoad() {
