@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar color="rutas">
-    <ion-title>Ruta 44</ion-title>
+    <ion-title>{{ item.title }}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -17,7 +17,7 @@
 
     <ion-card>
 
-        <img src="assets/img/map.png">
+      <img [src]="'assets/img/r_'+item.id+'.jpg'">
         <ion-fab right top>
           <button ion-fab>
             <ion-icon name="pin"></ion-icon>
@@ -27,12 +27,12 @@
         <ion-item>
           <ion-icon name="bus" item-start large></ion-icon>
           <h2>Ubicación actual</h2>
-          <p>49 av. Sur, parada Terminal de Occidente</p>
+          <p>{{item.recorrido}}</p>
         </ion-item>
       
         <ion-item>
-          <span item-start>1 min</span>
-          <span item-start>(0.5 km)</span>
+          <span item-start>{{item.tiempo}}</span>
+          <span item-start>({{item.distancia}})</span>
           <button ion-button icon-start clear item-end>
             <ion-icon name="navigate"></ion-icon>
             Ticket

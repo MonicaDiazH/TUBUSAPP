@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 346:
+/***/ 345:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TicketsPageModule", function() { return TicketsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tickets__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tickets__ = __webpack_require__(365);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var TicketsPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 366:
+/***/ 365:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72,7 +72,7 @@ var TicketsPage = /** @class */ (function () {
     };
     TicketsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-tickets',template:/*ion-inline-start:"C:\git\TUBUSAPP\src\pages\tickets\tickets.html"*/'<!--\n\n  Generated template for the TicketsPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="tickets">\n\n    <ion-title>Tickets</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\git\TUBUSAPP\src\pages\tickets\tickets.html"*/,
+            selector: 'page-tickets',template:/*ion-inline-start:"C:\git\TUBUSAPP\src\pages\tickets\tickets.html"*/'<!--\n\n  Generated template for the TicketsPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="tickets">\n\n    <ion-title>Tickets</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-segment [(ngModel)]="seleccion">\n\n    <ion-segment-button value="pagar">Pagar</ion-segment-button>\n\n    <ion-segment-button value="consumo">Consumo</ion-segment-button>\n\n    <ion-segment-button value="saldo">Saldo</ion-segment-button>\n\n    </ion-segment>\n\n    <br>\n\n    <div *ngIf="seleccion == \'pagar\'">\n\n        <ion-card>\n\n            <img src="assets/img/pagar.png"/>\n\n            <ion-card-content>\n\n              <p>\n\n                Acerca tu código al dispositivo infrarojo del transporte público.\n\n              </p>\n\n            </ion-card-content>\n\n          </ion-card>\n\n    </div>\n\n    <div *ngIf="seleccion == \'consumo\'">\n\n      <ion-searchbar placeholder="Buscar" (ionInput)="getItems($event)"></ion-searchbar>\n\n      <ion-list inset>\n\n        <button ion-item *ngFor="let item of items">\n\n          <ion-grid>\n\n            <ion-row>\n\n              <ion-col col-12><h2>{{ item.fecha }}</h2></ion-col>\n\n            </ion-row>\n\n            <ion-row>\n\n                <ion-col col-6><p>{{ item.title }}  </p></ion-col>\n\n                <ion-col col-6><p>Tarifa: {{ item.tarifa }}</p></ion-col>\n\n            </ion-row>\n\n            <ion-row>\n\n                <ion-col col-6><p>{{ item.title1 }}</p></ion-col>\n\n                <ion-col col-6><p>Tarifa: {{ item.tarifa }}</p></ion-col>\n\n            </ion-row>\n\n          </ion-grid>    \n\n        </button> \n\n      </ion-list>\n\n    </div>\n\n    <div *ngIf="seleccion == \'saldo\'">\n\n        <ion-item>\n\n            <ion-icon name="cash" item-start large></ion-icon>\n\n            <h2>Saldo disponible</h2>\n\n            <p>$13.50</p>\n\n          </ion-item>\n\n        \n\n          <ion-item>\n\n            <ion-icon name="pie" item-start large ></ion-icon>\n\n            <h2>Consumido</h2>\n\n            <p>$ 6.50</p>\n\n          </ion-item>\n\n        \n\n          <ion-item>\n\n            <button ion-button icon-start clear item-end>\n\n              <ion-icon name="swap"></ion-icon>\n\n              Comprar Saldo\n\n            </button>\n\n          </ion-item>\n\n    </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\git\TUBUSAPP\src\pages\tickets\tickets.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], TicketsPage);
