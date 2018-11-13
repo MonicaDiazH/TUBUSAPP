@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 345:
+/***/ 344:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TicketsPageModule", function() { return TicketsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tickets__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tickets__ = __webpack_require__(364);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var TicketsPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 365:
+/***/ 364:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66,7 +66,31 @@ var TicketsPage = /** @class */ (function () {
     function TicketsPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.seleccion = "pagar";
+        this.searchQuery = '';
+        this.initializeItems();
     }
+    TicketsPage.prototype.initializeItems = function () {
+        this.items = [
+            { 'id': '01', 'title': 'Ruta 44', 'title1': 'Ruta 30 B', 'tarifa': '$0.25 ctvs', 'fecha': '13 nov. 2018', 'recorrido': 'De Santa Tecla a San Salvador' },
+            { 'id': '02', 'title': 'Ruta 101 B', 'title1': 'Ruta 44', 'tarifa': '$0.25 ctvs', 'fecha': '09 nov. 2018', 'recorrido': 'De Santa Tecla al Centro de San Salvador' },
+            { 'id': '03', 'title': 'Ruta 30 B', 'title1': 'Ruta 101 D', 'tarifa': '$0.25 ctvs', 'fecha': '06 nov. 2018', 'recorrido': 'De Santa Tecla al Centro de San Salvador' },
+            { 'id': '04', 'title': 'Ruta 101 D', 'title1': 'Ruta 30 B', 'tarifa': '$0.25 ctvs', 'fecha': '01 nov. 2018', 'recorrido': 'De Santa Tecla al Centro de San Salvador' },
+            { 'id': '05', 'title': 'Ruta 108', 'title1': 'Ruta 108', 'tarifa': '$0.76 ctvs', 'fecha': '29 oct. 2018', 'recorrido': 'De San Juan Opico a San Salvador' },
+        ];
+    };
+    TicketsPage.prototype.getItems = function (ev) {
+        // Reset items back to all of the items
+        this.initializeItems();
+        // set val to the value of the searchbar
+        var val = ev.target.value;
+        // if the value is an empty string don't filter the items
+        if (val && val.trim() != '') {
+            this.items = this.items.filter(function (item) {
+                return (item.fecha.toLowerCase().indexOf(val.toLowerCase()) > -1);
+            });
+        }
+    };
     TicketsPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad TicketsPage');
     };
