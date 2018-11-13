@@ -18,6 +18,11 @@ export class PerfilPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  getItems(ev) {
+    
+  }
+
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad PerfilPage');
   }

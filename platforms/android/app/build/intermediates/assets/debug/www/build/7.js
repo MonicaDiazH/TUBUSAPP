@@ -1,6 +1,6 @@
 webpackJsonp([7],{
 
-/***/ 339:
+/***/ 340:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RutasPageModule", function() { return RutasPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__rutas__ = __webpack_require__(358);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__rutas__ = __webpack_require__(360);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var RutasPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 358:
+/***/ 360:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72,14 +72,11 @@ var RutasPage = /** @class */ (function () {
     }
     RutasPage.prototype.initializeItems = function () {
         this.items = [
-            'Ruta 44',
-            'Ruta 101 B',
-            'Ruta 30 B',
-            'Ruta 101 D',
-            'Ruta 108',
-            'Ruta 52',
-            'Ruta 53',
-            'Ruta 46 C',
+            { 'id': '01', 'title': 'Ruta 44', 'tarifa': '$0.25 ctvs', 'tiempo': '5 min', 'recorrido': 'De Santa Tecla a San Salvador', 'distancia': '2 km' },
+            { 'id': '02', 'title': 'Ruta 101 B', 'tarifa': '$0.25 ctvs', 'tiempo': '20 min', 'recorrido': 'De Santa Tecla al Centro de San Salvador', 'distancia': '10 km' },
+            { 'id': '03', 'title': 'Ruta 30 B', 'tarifa': '$0.25 ctvs', 'tiempo': '1 min', 'recorrido': 'De Santa Tecla al Centro de San Salvador', 'distancia': '0.5 km' },
+            { 'id': '04', 'title': 'Ruta 101 D', 'tarifa': '$0.25 ctvs', 'tiempo': '3 min', 'recorrido': 'De Santa Tecla al Centro de San Salvador', 'distancia': '1 km' },
+            { 'id': '05', 'title': 'Ruta 108', 'tarifa': '$0.76 ctvs', 'tiempo': '10 min', 'recorrido': 'De San Juan Opico a San Salvador', 'distancia': '5 km' },
         ];
     };
     RutasPage.prototype.getItems = function (ev) {
@@ -90,16 +87,19 @@ var RutasPage = /** @class */ (function () {
         // if the value is an empty string don't filter the items
         if (val && val.trim() != '') {
             this.items = this.items.filter(function (item) {
-                return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
+                return (item.title.toLowerCase().indexOf(val.toLowerCase()) > -1);
             });
         }
+    };
+    RutasPage.prototype.openItem = function (item) {
+        this.navCtrl.push('DetallerutaPage', { item: item });
     };
     RutasPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad RutasPage');
     };
     RutasPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-rutas',template:/*ion-inline-start:"C:\git\TUBUSAPP\src\pages\rutas\rutas.html"*/'<!--\n\n  Generated template for the RutasPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="rutas">\n\n    <ion-title>Ruta de Buses</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>\n\n    <ion-list>\n\n        <ion-item *ngFor="let item of items">\n\n          <ion-thumbnail item-start>\n\n            <img src="assets/img/bus-stop.png">\n\n          </ion-thumbnail>\n\n          <h2>{{item}}</h2>\n\n          <button ion-button clear item-end [navPush]="detallerutaPage">Info</button>\n\n        </ion-item>\n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\git\TUBUSAPP\src\pages\rutas\rutas.html"*/,
+            selector: 'page-rutas',template:/*ion-inline-start:"C:\git\TUBUSAPP\src\pages\rutas\rutas.html"*/'<!--\n\n  Generated template for the RutasPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="rutas">\n\n    <ion-title>Ruta de Buses</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-searchbar placeholder="Buscar Ruta de Bus" (ionInput)="getItems($event)"></ion-searchbar>\n\n    <ion-list>\n\n        <ion-item *ngFor="let item of items">\n\n          <ion-thumbnail item-start>\n\n            <img src="assets/img/bus-stop.png">\n\n          </ion-thumbnail>\n\n          <h2>{{item.title}}</h2>\n\n          <button ion-button clear item-end (click)="openItem(item)">Info</button>\n\n        </ion-item>\n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\git\TUBUSAPP\src\pages\rutas\rutas.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], RutasPage);
