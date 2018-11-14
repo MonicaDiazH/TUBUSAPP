@@ -25,8 +25,8 @@ export class RutasPage {
 
   initializeItems() {
     this.items = [
-      {'id':'01','title':'Ruta 44', 'tarifa':'$0.25 ctvs', 'tiempo':'5 min','recorrido':'De Santa Tecla a San Salvador','distancia':'2 km'},
-      {'id':'02','title':'Ruta 101 B', 'tarifa':'$0.25 ctvs', 'tiempo':'20 min','recorrido':'De Santa Tecla al Centro de San Salvador','distancia':'10 km'},
+      {'id':'01','title':'Ruta 44', 'tarifa':'$0.25 ctvs', 'tiempo':'5 min','recorrido':'49 Av. Sur','distancia':'2 km'},
+      {'id':'02','title':'Ruta 101 B', 'tarifa':'$0.25 ctvs', 'tiempo':'20 min','recorrido':'Santa Tecla al Centro de San Salvador','distancia':'10 km'},
       {'id':'03','title':'Ruta 30 B', 'tarifa':'$0.25 ctvs', 'tiempo':'1 min','recorrido':'De Santa Tecla al Centro de San Salvador','distancia':'0.5 km'},
       {'id':'04','title':'Ruta 101 D', 'tarifa':'$0.25 ctvs', 'tiempo':'3 min','recorrido':'De Santa Tecla al Centro de San Salvador','distancia':'1 km'},
       {'id':'05','title':'Ruta 108', 'tarifa':'$0.76 ctvs', 'tiempo':'10 min','recorrido':'De San Juan Opico a San Salvador','distancia':'5 km'},

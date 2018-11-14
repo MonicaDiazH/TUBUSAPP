@@ -1,6 +1,6 @@
 webpackJsonp([7],{
 
-/***/ 347:
+/***/ 340:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RutasPageModule", function() { return RutasPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__rutas__ = __webpack_require__(367);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__rutas__ = __webpack_require__(361);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var RutasPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 367:
+/***/ 361:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72,8 +72,8 @@ var RutasPage = /** @class */ (function () {
     }
     RutasPage.prototype.initializeItems = function () {
         this.items = [
-            { 'id': '01', 'title': 'Ruta 44', 'tarifa': '$0.25 ctvs', 'tiempo': '5 min', 'recorrido': 'De Santa Tecla a San Salvador', 'distancia': '2 km' },
-            { 'id': '02', 'title': 'Ruta 101 B', 'tarifa': '$0.25 ctvs', 'tiempo': '20 min', 'recorrido': 'De Santa Tecla al Centro de San Salvador', 'distancia': '10 km' },
+            { 'id': '01', 'title': 'Ruta 44', 'tarifa': '$0.25 ctvs', 'tiempo': '5 min', 'recorrido': '49 Av. Sur', 'distancia': '2 km' },
+            { 'id': '02', 'title': 'Ruta 101 B', 'tarifa': '$0.25 ctvs', 'tiempo': '20 min', 'recorrido': 'Santa Tecla al Centro de San Salvador', 'distancia': '10 km' },
             { 'id': '03', 'title': 'Ruta 30 B', 'tarifa': '$0.25 ctvs', 'tiempo': '1 min', 'recorrido': 'De Santa Tecla al Centro de San Salvador', 'distancia': '0.5 km' },
             { 'id': '04', 'title': 'Ruta 101 D', 'tarifa': '$0.25 ctvs', 'tiempo': '3 min', 'recorrido': 'De Santa Tecla al Centro de San Salvador', 'distancia': '1 km' },
             { 'id': '05', 'title': 'Ruta 108', 'tarifa': '$0.76 ctvs', 'tiempo': '10 min', 'recorrido': 'De San Juan Opico a San Salvador', 'distancia': '5 km' },

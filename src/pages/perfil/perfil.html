@@ -12,12 +12,11 @@
   
   </ion-header>
 <ion-content padding>
-    <ion-card>
-        <ion-card-header>
-          Header
-        </ion-card-header>
-        <ion-card-content>
-          The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
-        </ion-card-content>
-      </ion-card>
+  <ion-searchbar placeholder="¿A dónde quieres ir?" (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+      <ion-item *ngFor="let item of items">
+        <h2>{{item.title}}</h2>
+        <button ion-button clear item-end (click)="openItem(item)">Ir</button>
+      </ion-item>
+    </ion-list>
 </ion-content>
