@@ -54,19 +54,19 @@ var map = {
 		17
 	],
 	"../pages/detalleruta/detalleruta.module": [
-		331,
+		346,
 		16
 	],
 	"../pages/horarios/horarios.module": [
-		332,
+		331,
 		15
 	],
 	"../pages/inicio/inicio.module": [
-		333,
+		332,
 		14
 	],
 	"../pages/item-create/item-create.module": [
-		334,
+		333,
 		13
 	],
 	"../pages/item-detail/item-detail.module": [
@@ -74,51 +74,51 @@ var map = {
 		12
 	],
 	"../pages/list-master/list-master.module": [
-		336,
+		334,
 		11
 	],
 	"../pages/login/login.module": [
-		337,
+		336,
 		10
 	],
 	"../pages/menu/menu.module": [
-		338,
+		337,
 		9
 	],
 	"../pages/perfil/perfil.module": [
-		339,
+		338,
 		8
 	],
 	"../pages/rutas/rutas.module": [
-		340,
+		347,
 		7
 	],
 	"../pages/search/search.module": [
-		341,
+		340,
 		6
 	],
 	"../pages/settings/settings.module": [
-		342,
+		339,
 		5
 	],
 	"../pages/signup/signup.module": [
-		343,
+		341,
 		4
 	],
 	"../pages/tabs/tabs.module": [
-		344,
+		342,
 		3
 	],
 	"../pages/tickets/tickets.module": [
-		345,
+		343,
 		2
 	],
 	"../pages/tutorial/tutorial.module": [
-		346,
+		344,
 		1
 	],
 	"../pages/welcome/welcome.module": [
-		347,
+		345,
 		0
 	]
 };
@@ -421,23 +421,23 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/cards/cards.module#CardsPageModule', name: 'CardsPage', segment: 'cards', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/content/content.module#ContentPageModule', name: 'ContentPage', segment: 'content', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/detallehorario/detallehorario.module#DetallehorarioPageModule', name: 'DetallehorarioPage', segment: 'detallehorario', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/detalleruta/detalleruta.module#DetallerutaPageModule', name: 'DetallerutaPage', segment: 'detalleruta', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/horarios/horarios.module#HorariosPageModule', name: 'HorariosPage', segment: 'horarios', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/inicio/inicio.module#InicioPageModule', name: 'InicioPage', segment: 'inicio', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/item-create/item-create.module#ItemCreatePageModule', name: 'ItemCreatePage', segment: 'item-create', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/item-detail/item-detail.module#ItemDetailPageModule', name: 'ItemDetailPage', segment: 'item-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/list-master/list-master.module#ListMasterPageModule', name: 'ListMasterPage', segment: 'list-master', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/item-detail/item-detail.module#ItemDetailPageModule', name: 'ItemDetailPage', segment: 'item-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/perfil/perfil.module#PerfilPageModule', name: 'PerfilPage', segment: 'perfil', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/rutas/rutas.module#RutasPageModule', name: 'RutasPage', segment: 'rutas', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tickets/tickets.module#TicketsPageModule', name: 'TicketsPage', segment: 'tickets', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tutorial/tutorial.module#TutorialPageModule', name: 'TutorialPage', segment: 'tutorial', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/detalleruta/detalleruta.module#DetallerutaPageModule', name: 'DetallerutaPage', segment: 'detalleruta', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/rutas/rutas.module#RutasPageModule', name: 'RutasPage', segment: 'rutas', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["a" /* IonicStorageModule */].forRoot()

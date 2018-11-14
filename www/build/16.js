@@ -1,6 +1,6 @@
 webpackJsonp([16],{
 
-/***/ 331:
+/***/ 346:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DetallerutaPageModule", function() { return DetallerutaPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__detalleruta__ = __webpack_require__(351);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__detalleruta__ = __webpack_require__(366);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var DetallerutaPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 351:
+/***/ 366:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75,7 +75,7 @@ var DetallerutaPage = /** @class */ (function () {
     };
     DetallerutaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-detalleruta',template:/*ion-inline-start:"D:\git\TUBUSAPP\TUBUSAPP\src\pages\detalleruta\detalleruta.html"*/'<!--\n\n  Generated template for the DetallerutaPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="rutas">\n\n    <ion-title>{{ item.title }}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n    <ion-card>\n\n\n\n      <img [src]="\'assets/img/r_\'+item.id+\'.jpg\'">\n\n        <ion-fab right top>\n\n          <button ion-fab>\n\n            <ion-icon name="pin"></ion-icon>\n\n          </button>\n\n        </ion-fab>\n\n      \n\n        <ion-item>\n\n          <ion-icon name="bus" item-start large></ion-icon>\n\n          <h2>Ubicación actual</h2>\n\n          <p>{{item.recorrido}}</p>\n\n        </ion-item>\n\n      \n\n        <ion-item>\n\n          <span item-start>{{item.tiempo}}</span>\n\n          <span item-start>({{item.distancia}})</span>\n\n          <button ion-button icon-start clear item-end>\n\n            <ion-icon name="navigate"></ion-icon>\n\n            Ticket\n\n          </button>\n\n        </ion-item>\n\n      \n\n      </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\git\TUBUSAPP\TUBUSAPP\src\pages\detalleruta\detalleruta.html"*/,
+            selector: 'page-detalleruta',template:/*ion-inline-start:"D:\git\TUBUSAPP\TUBUSAPP\src\pages\detalleruta\detalleruta.html"*/'<!--\n\n  Generated template for the DetallerutaPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="rutas">\n\n    <ion-title>{{ item.title }}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n    <ion-card>\n\n\n\n      <img [src]="\'assets/img/r_\'+item.id+\'.jpg\'">\n\n        <ion-fab right top>\n\n          <button ion-fab>\n\n            <ion-icon name="pin"></ion-icon>\n\n          </button>\n\n        </ion-fab>\n\n      \n\n        <ion-item>\n\n          <ion-icon name="bus" item-start large></ion-icon>\n\n          <h2>Ubicación actual</h2>\n\n          <p>{{item.recorrido}}</p>\n\n        </ion-item>\n\n      \n\n        <ion-item>\n\n          <span item-start>{{item.tiempo}}</span>\n\n          <span item-start>({{item.distancia}})</span>\n\n          <button ion-button icon-start clear item-end>\n\n            <ion-icon name="navigate"></ion-icon>\n\n            En camino\n\n          </button>\n\n        </ion-item>\n\n      \n\n      </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\git\TUBUSAPP\TUBUSAPP\src\pages\detalleruta\detalleruta.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */]])
     ], DetallerutaPage);
