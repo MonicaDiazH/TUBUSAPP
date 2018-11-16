@@ -1,6 +1,6 @@
 webpackJsonp([18],{
 
-/***/ 330:
+/***/ 331:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DetallehorarioPageModule", function() { return DetallehorarioPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__detallehorario__ = __webpack_require__(351);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__detallehorario__ = __webpack_require__(352);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,7 +41,7 @@ var DetallehorarioPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 351:
+/***/ 352:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79,7 +79,7 @@ var DetallehorarioPage = /** @class */ (function () {
     };
     DetallehorarioPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-detallehorario',template:/*ion-inline-start:"D:\git\TUBUSAPP\TUBUSAPP\src\pages\detallehorario\detallehorario.html"*/'<!--\n\n  Generated template for the DetallehorarioPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="horarios"> \n\n    <ion-title>{{ item.title }}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  \n\n  <ion-card>\n\n\n\n          <img [src]="\'assets/img/ruta_\'+item.id+\'.png\'">\n\n\n\n          <ion-item>\n\n            <ion-icon name="clock" item-start large></ion-icon>\n\n            <h2>Horarios</h2>\n\n            <p>{{item.horario}}</p>\n\n          </ion-item>\n\n        \n\n          <ion-item>\n\n            <ion-icon name="cash" item-start large ></ion-icon>\n\n            <h2>Tarifa</h2>\n\n            <p>{{item.tarifa}}</p>\n\n          </ion-item>\n\n\n\n          <ion-item>\n\n              <ion-icon name="pin" item-start large ></ion-icon>\n\n              <h2>Recorrido</h2>\n\n              <p>{{item.recorrido}}</p>\n\n            </ion-item>\n\n   \n\n    </ion-card>    \n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\git\TUBUSAPP\TUBUSAPP\src\pages\detallehorario\detallehorario.html"*/,
+            selector: 'page-detallehorario',template:/*ion-inline-start:"C:\git\TUBUSAPP\src\pages\detallehorario\detallehorario.html"*/'<!--\n\n  Generated template for the DetallehorarioPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="horarios"> \n\n    <ion-title>{{ item.title }}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  \n\n  <ion-card>\n\n\n\n          <img [src]="\'assets/img/ruta_\'+item.id+\'.png\'">\n\n\n\n          <ion-item>\n\n            <ion-icon name="clock" item-start large></ion-icon>\n\n            <h2>Horarios</h2>\n\n            <p>{{item.horario}}</p>\n\n          </ion-item>\n\n        \n\n          <ion-item>\n\n            <ion-icon name="cash" item-start large ></ion-icon>\n\n            <h2>Tarifa</h2>\n\n            <p>{{item.tarifa}}</p>\n\n          </ion-item>\n\n\n\n          <ion-item>\n\n              <ion-icon name="pin" item-start large ></ion-icon>\n\n              <h2>Recorrido</h2>\n\n              <p>{{item.recorrido}}</p>\n\n            </ion-item>\n\n   \n\n    </ion-card>    \n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\git\TUBUSAPP\src\pages\detallehorario\detallehorario.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */]])
     ], DetallehorarioPage);

@@ -48,5 +48,24 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-googlemaps": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-googlemaps"
+    },
+    "is_top_level": true,
+    "variables": {
+      "API_KEY_FOR_ANDROID": "AIzaSyDcW9riL1Yf1kzGN7o3qWJJZYrsMhZ0OXA",
+      "API_KEY_FOR_IOS": "AIzaSyDcW9riL1Yf1kzGN7o3qWJJZYrsMhZ0OXA"
+    }
+  },
+  "cordova-plugin-geolocation": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-geolocation@4.0.1"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

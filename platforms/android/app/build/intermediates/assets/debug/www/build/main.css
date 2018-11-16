@@ -36434,6 +36434,10 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+page-detalleperfil #map_canvas {
+  height: 50%;
+}
+
 page-inicio .col {
   padding: 50px;
   border: 1px solid #ddd;

@@ -1,14 +1,14 @@
 webpackJsonp([17],{
 
-/***/ 330:
+/***/ 334:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DetallehorarioPageModule", function() { return DetallehorarioPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DetalleperfilPageModule", function() { return DetalleperfilPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__detallehorario__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__detalleperfil__ = __webpack_require__(355);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,37 +18,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var DetallehorarioPageModule = /** @class */ (function () {
-    function DetallehorarioPageModule() {
+var DetalleperfilPageModule = /** @class */ (function () {
+    function DetalleperfilPageModule() {
     }
-    DetallehorarioPageModule = __decorate([
+    DetalleperfilPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__detallehorario__["a" /* DetallehorarioPage */],
+                __WEBPACK_IMPORTED_MODULE_2__detalleperfil__["a" /* DetalleperfilPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__detallehorario__["a" /* DetallehorarioPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__detalleperfil__["a" /* DetalleperfilPage */]),
             ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_2__detallehorario__["a" /* DetallehorarioPage */]
-            ]
         })
-    ], DetallehorarioPageModule);
-    return DetallehorarioPageModule;
+    ], DetalleperfilPageModule);
+    return DetalleperfilPageModule;
 }());
 
-//# sourceMappingURL=detallehorario.module.js.map
+//# sourceMappingURL=detalleperfil.module.js.map
 
 /***/ }),
 
-/***/ 350:
+/***/ 355:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DetallehorarioPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DetalleperfilPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_google_maps__ = __webpack_require__(227);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -61,32 +59,61 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
- * Generated class for the DetallehorarioPage page.
+ * Generated class for the DetalleperfilPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var DetallehorarioPage = /** @class */ (function () {
-    function DetallehorarioPage(navCtrl, navParams, item) {
+var DetalleperfilPage = /** @class */ (function () {
+    function DetalleperfilPage(navCtrl, navParams, item) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        //this.item = navParams.get('item') || item.defaultItem;
         this.item = navParams.data.item;
     }
-    DetallehorarioPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad DetallehorarioPage');
+    DetalleperfilPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad DetalleperfilPage');
+        this.loadMap();
     };
-    DetallehorarioPage = __decorate([
+    DetalleperfilPage.prototype.loadMap = function () {
+        var _this = this;
+        // This code is necessary for browser
+        __WEBPACK_IMPORTED_MODULE_3__ionic_native_google_maps__["a" /* Environment */].setEnv({
+            'API_KEY_FOR_BROWSER_RELEASE': '(your api key for `https://`)',
+            'API_KEY_FOR_BROWSER_DEBUG': '(your api key for `http://`)'
+        });
+        var option = {
+            enableHighAccuracy: true
+        };
+        __WEBPACK_IMPORTED_MODULE_3__ionic_native_google_maps__["c" /* LocationService */].getMyLocation(option).then(function (myLocation) {
+            _this.map = __WEBPACK_IMPORTED_MODULE_3__ionic_native_google_maps__["b" /* GoogleMaps */].create('map_canvas', {
+                camera: {
+                    target: myLocation.latLng,
+                    zoom: 16
+                }
+            });
+            var text = ["Current your location:\n",
+                "latitude:" + myLocation.latLng.lat.toFixed(3),
+                "longitude:" + myLocation.latLng.lng.toFixed(3)].join("\n");
+            var marker = _this.map.addMarkerSync({
+                title: text,
+                position: myLocation.latLng
+            });
+            //this.map = GoogleMaps.create('map_canvas', mapOptions); 
+            marker.showInfoWindow();
+        });
+    };
+    DetalleperfilPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-detallehorario',template:/*ion-inline-start:"C:\git\TUBUSAPP\src\pages\detallehorario\detallehorario.html"*/'<!--\n\n  Generated template for the DetallehorarioPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="horarios"> \n\n    <ion-title>{{ item.title }}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  \n\n  <ion-card>\n\n\n\n          <img [src]="\'assets/img/ruta_\'+item.id+\'.png\'">\n\n\n\n          <ion-item>\n\n            <ion-icon name="clock" item-start large></ion-icon>\n\n            <h2>Horarios</h2>\n\n            <p>{{item.horario}}</p>\n\n          </ion-item>\n\n        \n\n          <ion-item>\n\n            <ion-icon name="cash" item-start large ></ion-icon>\n\n            <h2>Tarifa</h2>\n\n            <p>{{item.tarifa}}</p>\n\n          </ion-item>\n\n\n\n          <ion-item>\n\n              <ion-icon name="pin" item-start large ></ion-icon>\n\n              <h2>Recorrido</h2>\n\n              <p>{{item.recorrido}}</p>\n\n            </ion-item>\n\n   \n\n    </ion-card>    \n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\git\TUBUSAPP\src\pages\detallehorario\detallehorario.html"*/,
+            selector: 'page-detalleperfil',template:/*ion-inline-start:"C:\git\TUBUSAPP\src\pages\detalleperfil\detalleperfil.html"*/'<!--\n\n  Generated template for the DetalleperfilPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Detalles de Ruta</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <div id="map_canvas"></div>\n\n    <div>\n\n   <ion-card>\n\n    \n\n    <!--<img [src]="\'assets/img/r_\'+item.id+\'.jpg\'">-->\n\n      <ion-fab right top>\n\n        <button ion-fab>\n\n          <ion-icon name="pin"></ion-icon>\n\n        </button>\n\n      </ion-fab>\n\n      \n\n      <ion-list inset>\n\n          <ion-grid>\n\n            <ion-row>\n\n              <ion-col col-12><h2>{{ item.ruta1}}</h2></ion-col>\n\n            </ion-row>\n\n            <ion-row>\n\n                <ion-col col-6><p>{{ item.tiempo }}  </p></ion-col>\n\n                <ion-col col-6><p>Tarifa: {{ item.tarifa}}</p></ion-col>\n\n            </ion-row>\n\n            <ion-row>\n\n              <ion-col col-12><h2>{{ item.ruta2 }}</h2></ion-col>\n\n            </ion-row>\n\n            <ion-row>\n\n                <ion-col col-6><p>{{ item.tiempo }}  </p></ion-col>\n\n                <ion-col col-6><p>Tarifa: {{ item.tarifa}}</p></ion-col>\n\n            </ion-row>\n\n          </ion-grid>    \n\n      </ion-list>\n\n    \n\n    </ion-card>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\git\TUBUSAPP\src\pages\detalleperfil\detalleperfil.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */]])
-    ], DetallehorarioPage);
-    return DetallehorarioPage;
+    ], DetalleperfilPage);
+    return DetalleperfilPage;
 }());
 
-//# sourceMappingURL=detallehorario.js.map
+//# sourceMappingURL=detalleperfil.js.map
 
 /***/ })
 

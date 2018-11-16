@@ -1,6 +1,6 @@
 webpackJsonp([15],{
 
-/***/ 333:
+/***/ 335:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HorariosPageModule", function() { return HorariosPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__horarios__ = __webpack_require__(354);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__horarios__ = __webpack_require__(356);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var HorariosPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 354:
+/***/ 356:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -98,7 +98,7 @@ var HorariosPage = /** @class */ (function () {
     };
     HorariosPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-horarios',template:/*ion-inline-start:"D:\git\TUBUSAPP\TUBUSAPP\src\pages\horarios\horarios.html"*/'<!--\n\n  Generated template for the HorariosPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="horarios"> \n\n    <ion-title>Horarios y Tarifas</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-searchbar placeholder="Buscar Ruta de Bus" (ionInput)="getItems($event)"></ion-searchbar>\n\n    <ion-list>\n\n        <ion-item *ngFor="let item of items">\n\n          <ion-thumbnail item-start>\n\n            <img src="assets/img/bus-stop.png">\n\n          </ion-thumbnail>\n\n          <h2>{{item.title}}</h2>\n\n          <button ion-button clear item-end (click)="openItem(item)">Info</button>\n\n        </ion-item>\n\n      </ion-list>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\git\TUBUSAPP\TUBUSAPP\src\pages\horarios\horarios.html"*/,
+            selector: 'page-horarios',template:/*ion-inline-start:"C:\git\TUBUSAPP\src\pages\horarios\horarios.html"*/'<!--\n\n  Generated template for the HorariosPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="horarios"> \n\n    <ion-title>Horarios y Tarifas</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-searchbar placeholder="Buscar Ruta de Bus" (ionInput)="getItems($event)"></ion-searchbar>\n\n    <ion-list>\n\n        <ion-item *ngFor="let item of items">\n\n          <ion-thumbnail item-start>\n\n            <img src="assets/img/bus-stop.png">\n\n          </ion-thumbnail>\n\n          <h2>{{item.title}}</h2>\n\n          <button ion-button clear item-end (click)="openItem(item)">Info</button>\n\n        </ion-item>\n\n      </ion-list>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\git\TUBUSAPP\src\pages\horarios\horarios.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], HorariosPage);

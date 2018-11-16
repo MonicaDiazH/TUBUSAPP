@@ -14,15 +14,17 @@
 
 
 <ion-content padding>
-  <ion-card>
-
-    <img [src]="'assets/img/r_'+item.id+'.jpg'">
+    <div id="map_canvas"></div>
+    <div>
+   <ion-card>
+    
+    <!--<img [src]="'assets/img/r_'+item.id+'.jpg'">-->
       <ion-fab right top>
         <button ion-fab>
           <ion-icon name="pin"></ion-icon>
         </button>
       </ion-fab>
-    
+      
       <ion-list inset>
           <ion-grid>
             <ion-row>
@@ -43,4 +45,5 @@
       </ion-list>
     
     </ion-card>
+  </div>
 </ion-content>

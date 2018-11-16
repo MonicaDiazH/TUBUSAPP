@@ -1,6 +1,6 @@
 webpackJsonp([17],{
 
-/***/ 331:
+/***/ 334:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DetalleperfilPageModule", function() { return DetalleperfilPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__detalleperfil__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__detalleperfil__ = __webpack_require__(355);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var DetalleperfilPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 352:
+/***/ 355:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -46,6 +46,7 @@ var DetalleperfilPageModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_google_maps__ = __webpack_require__(227);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -55,6 +56,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -72,10 +74,39 @@ var DetalleperfilPage = /** @class */ (function () {
     }
     DetalleperfilPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad DetalleperfilPage');
+        this.loadMap();
+    };
+    DetalleperfilPage.prototype.loadMap = function () {
+        var _this = this;
+        // This code is necessary for browser
+        __WEBPACK_IMPORTED_MODULE_3__ionic_native_google_maps__["a" /* Environment */].setEnv({
+            'API_KEY_FOR_BROWSER_RELEASE': '(your api key for `https://`)',
+            'API_KEY_FOR_BROWSER_DEBUG': '(your api key for `http://`)'
+        });
+        var option = {
+            enableHighAccuracy: true
+        };
+        __WEBPACK_IMPORTED_MODULE_3__ionic_native_google_maps__["c" /* LocationService */].getMyLocation(option).then(function (myLocation) {
+            _this.map = __WEBPACK_IMPORTED_MODULE_3__ionic_native_google_maps__["b" /* GoogleMaps */].create('map_canvas', {
+                camera: {
+                    target: myLocation.latLng,
+                    zoom: 16
+                }
+            });
+            var text = ["Current your location:\n",
+                "latitude:" + myLocation.latLng.lat.toFixed(3),
+                "longitude:" + myLocation.latLng.lng.toFixed(3)].join("\n");
+            var marker = _this.map.addMarkerSync({
+                title: text,
+                position: myLocation.latLng
+            });
+            //this.map = GoogleMaps.create('map_canvas', mapOptions); 
+            marker.showInfoWindow();
+        });
     };
     DetalleperfilPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-detalleperfil',template:/*ion-inline-start:"D:\git\TUBUSAPP\TUBUSAPP\src\pages\detalleperfil\detalleperfil.html"*/'<!--\n\n  Generated template for the DetalleperfilPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Detalles de Ruta</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-card>\n\n\n\n    <img [src]="\'assets/img/r_\'+item.id+\'.jpg\'">\n\n      <ion-fab right top>\n\n        <button ion-fab>\n\n          <ion-icon name="pin"></ion-icon>\n\n        </button>\n\n      </ion-fab>\n\n    \n\n      <ion-list inset>\n\n          <ion-grid>\n\n            <ion-row>\n\n              <ion-col col-12><h2>{{ item.ruta1}}</h2></ion-col>\n\n            </ion-row>\n\n            <ion-row>\n\n                <ion-col col-6><p>{{ item.tiempo }}  </p></ion-col>\n\n                <ion-col col-6><p>Tarifa: {{ item.tarifa}}</p></ion-col>\n\n            </ion-row>\n\n            <ion-row>\n\n              <ion-col col-12><h2>{{ item.ruta2 }}</h2></ion-col>\n\n            </ion-row>\n\n            <ion-row>\n\n                <ion-col col-6><p>{{ item.tiempo }}  </p></ion-col>\n\n                <ion-col col-6><p>Tarifa: {{ item.tarifa}}</p></ion-col>\n\n            </ion-row>\n\n          </ion-grid>    \n\n      </ion-list>\n\n    \n\n    </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\git\TUBUSAPP\TUBUSAPP\src\pages\detalleperfil\detalleperfil.html"*/,
+            selector: 'page-detalleperfil',template:/*ion-inline-start:"C:\git\TUBUSAPP\src\pages\detalleperfil\detalleperfil.html"*/'<!--\n\n  Generated template for the DetalleperfilPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Detalles de Ruta</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <div id="map_canvas"></div>\n\n    <div>\n\n   <ion-card>\n\n    \n\n    <!--<img [src]="\'assets/img/r_\'+item.id+\'.jpg\'">-->\n\n      <ion-fab right top>\n\n        <button ion-fab>\n\n          <ion-icon name="pin"></ion-icon>\n\n        </button>\n\n      </ion-fab>\n\n      \n\n      <ion-list inset>\n\n          <ion-grid>\n\n            <ion-row>\n\n              <ion-col col-12><h2>{{ item.ruta1}}</h2></ion-col>\n\n            </ion-row>\n\n            <ion-row>\n\n                <ion-col col-6><p>{{ item.tiempo }}  </p></ion-col>\n\n                <ion-col col-6><p>Tarifa: {{ item.tarifa}}</p></ion-col>\n\n            </ion-row>\n\n            <ion-row>\n\n              <ion-col col-12><h2>{{ item.ruta2 }}</h2></ion-col>\n\n            </ion-row>\n\n            <ion-row>\n\n                <ion-col col-6><p>{{ item.tiempo }}  </p></ion-col>\n\n                <ion-col col-6><p>Tarifa: {{ item.tarifa}}</p></ion-col>\n\n            </ion-row>\n\n          </ion-grid>    \n\n      </ion-list>\n\n    \n\n    </ion-card>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\git\TUBUSAPP\src\pages\detalleperfil\detalleperfil.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */]])
     ], DetalleperfilPage);

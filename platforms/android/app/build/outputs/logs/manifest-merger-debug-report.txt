@@ -1,13 +1,27 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:2:1-14:12
-INJECTED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:2:1-14:12
-INJECTED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:2:1-14:12
-INJECTED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:2:1-14:12
+ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
+MERGED from [:tbxml-android:] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\tbxml-android.aar\a17ada575360ce130bd306a8c7f8dc42\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\8866c7f329fcd58b85794044b19ac0aa\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-location-15.0.1.aar\2e6c69666402cfa0abeaa942d8777d8c\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\bfb14776f52f22de4da0ab2176c9e6b8\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-15.0.1.aar\5a0b413e0cba8bea22cdf4b06df6157e\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\deb0ba9f0116a1cea2f3c617a72f6c14\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\908f81610b9ce56ec78b49d98d5d9341\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\477b5fac0a90618b52ce0b2237f08b33\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8378e84ddbbb78933b58fee2f46014af\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\addbe65865a6c48f6331a1eaf60f02da\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\b1f4aeddafdcd5097273f44dbdaed215\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\8c39b65e3c6f751f155b3763bcc0a8e8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\94221f5eb80efeb24a5866babbb571c9\AndroidManifest.xml:17:1-22:12
 MERGED from [:CordovaLib] C:\git\TUBUSAPP\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:1-27:12
-INJECTED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:2:1-14:12
-INJECTED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:2:1-14:12
-INJECTED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:2:1-14:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\b99e2a38a6279b5c0390d77a03ac9349\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:2:1-22:12
 	package
 		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:2:98-124
 		INJECTED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml
@@ -40,10 +54,32 @@ ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:3:
 		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:3:23-48
 uses-permission#android.permission.INTERNET
 ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\8866c7f329fcd58b85794044b19ac0aa\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\8866c7f329fcd58b85794044b19ac0aa\AndroidManifest.xml:24:5-67
 	android:name
 		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:5:5-12:19
+ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:5:5-14:19
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\8866c7f329fcd58b85794044b19ac0aa\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\8866c7f329fcd58b85794044b19ac0aa\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-location-15.0.1.aar\2e6c69666402cfa0abeaa942d8777d8c\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-location-15.0.1.aar\2e6c69666402cfa0abeaa942d8777d8c\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\bfb14776f52f22de4da0ab2176c9e6b8\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\bfb14776f52f22de4da0ab2176c9e6b8\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-15.0.1.aar\5a0b413e0cba8bea22cdf4b06df6157e\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-15.0.1.aar\5a0b413e0cba8bea22cdf4b06df6157e\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\deb0ba9f0116a1cea2f3c617a72f6c14\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\deb0ba9f0116a1cea2f3c617a72f6c14\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\908f81610b9ce56ec78b49d98d5d9341\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\908f81610b9ce56ec78b49d98d5d9341\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\477b5fac0a90618b52ce0b2237f08b33\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\477b5fac0a90618b52ce0b2237f08b33\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8378e84ddbbb78933b58fee2f46014af\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8378e84ddbbb78933b58fee2f46014af\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\addbe65865a6c48f6331a1eaf60f02da\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\addbe65865a6c48f6331a1eaf60f02da\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\b1f4aeddafdcd5097273f44dbdaed215\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\b1f4aeddafdcd5097273f44dbdaed215\AndroidManifest.xml:25:5-29:19
 	android:supportsRtl
 		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:5:114-140
 	android:label
@@ -78,11 +114,105 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:9:17-77
 	android:name
 		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:9:27-74
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:12:9-124
+	android:value
+		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:12:66-121
+	android:name
+		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:12:20-65
+meta-data#com.google.android.gms.version
+ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:13:9-122
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\908f81610b9ce56ec78b49d98d5d9341\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\908f81610b9ce56ec78b49d98d5d9341\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:13:66-119
+	android:name
+		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:13:20-65
 uses-sdk
-ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:13:5-74
+ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:15:5-74
+MERGED from [:tbxml-android:] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\tbxml-android.aar\a17ada575360ce130bd306a8c7f8dc42\AndroidManifest.xml:7:5-9:41
+MERGED from [:tbxml-android:] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\tbxml-android.aar\a17ada575360ce130bd306a8c7f8dc42\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\8866c7f329fcd58b85794044b19ac0aa\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\8866c7f329fcd58b85794044b19ac0aa\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-location-15.0.1.aar\2e6c69666402cfa0abeaa942d8777d8c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-location-15.0.1.aar\2e6c69666402cfa0abeaa942d8777d8c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\bfb14776f52f22de4da0ab2176c9e6b8\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\bfb14776f52f22de4da0ab2176c9e6b8\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-15.0.1.aar\5a0b413e0cba8bea22cdf4b06df6157e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-15.0.1.aar\5a0b413e0cba8bea22cdf4b06df6157e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\deb0ba9f0116a1cea2f3c617a72f6c14\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\deb0ba9f0116a1cea2f3c617a72f6c14\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\908f81610b9ce56ec78b49d98d5d9341\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\908f81610b9ce56ec78b49d98d5d9341\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\477b5fac0a90618b52ce0b2237f08b33\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\477b5fac0a90618b52ce0b2237f08b33\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8378e84ddbbb78933b58fee2f46014af\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8378e84ddbbb78933b58fee2f46014af\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\addbe65865a6c48f6331a1eaf60f02da\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\addbe65865a6c48f6331a1eaf60f02da\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\b1f4aeddafdcd5097273f44dbdaed215\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\b1f4aeddafdcd5097273f44dbdaed215\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\8c39b65e3c6f751f155b3763bcc0a8e8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\8c39b65e3c6f751f155b3763bcc0a8e8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\94221f5eb80efeb24a5866babbb571c9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\94221f5eb80efeb24a5866babbb571c9\AndroidManifest.xml:20:5-44
 MERGED from [:CordovaLib] C:\git\TUBUSAPP\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
 MERGED from [:CordovaLib] C:\git\TUBUSAPP\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\b99e2a38a6279b5c0390d77a03ac9349\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\b99e2a38a6279b5c0390d77a03ac9349\AndroidManifest.xml:20:5-44
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\477b5fac0a90618b52ce0b2237f08b33\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:13:42-71
+		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:15:42-71
 	android:minSdkVersion
-		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:13:15-41
+		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:15:15-41
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:16:5-79
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\8866c7f329fcd58b85794044b19ac0aa\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\8866c7f329fcd58b85794044b19ac0aa\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:16:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:17:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:18:5-79
+	android:name
+		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:18:22-76
+uses-feature#0x00020000
+ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\8866c7f329fcd58b85794044b19ac0aa\AndroidManifest.xml:26:5-28:35
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.1.aar\8866c7f329fcd58b85794044b19ac0aa\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:19:19-51
+	android:required
+		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:19:52-75
+uses-feature#android.hardware.location
+ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:20:5-62
+	android:name
+		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:20:19-59
+uses-feature#android.hardware.location.gps
+ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:21:5-66
+	android:name
+		ADDED from C:\git\TUBUSAPP\platforms\android\app\src\main\AndroidManifest.xml:21:19-63
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\bfb14776f52f22de4da0ab2176c9e6b8\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\bfb14776f52f22de4da0ab2176c9e6b8\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\bfb14776f52f22de4da0ab2176c9e6b8\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\bfb14776f52f22de4da0ab2176c9e6b8\AndroidManifest.xml:24:13-79
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\477b5fac0a90618b52ce0b2237f08b33\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8378e84ddbbb78933b58fee2f46014af\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8378e84ddbbb78933b58fee2f46014af\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\addbe65865a6c48f6331a1eaf60f02da\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\addbe65865a6c48f6331a1eaf60f02da\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\b1f4aeddafdcd5097273f44dbdaed215\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\b1f4aeddafdcd5097273f44dbdaed215\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\477b5fac0a90618b52ce0b2237f08b33\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\clara.varela\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\477b5fac0a90618b52ce0b2237f08b33\AndroidManifest.xml:27:13-51

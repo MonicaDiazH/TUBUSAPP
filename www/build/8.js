@@ -1,6 +1,6 @@
 webpackJsonp([8],{
 
-/***/ 348:
+/***/ 340:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PerfilPageModule", function() { return PerfilPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__perfil__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__perfil__ = __webpack_require__(361);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var PerfilPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 369:
+/***/ 361:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68,16 +68,16 @@ var PerfilPage = /** @class */ (function () {
         this.navParams = navParams;
         this.detallerutaPage = "DetallerutaPage";
         this.searchQuery = '';
-        this.initializeItems();
+        //this.initializeItems();
     }
     PerfilPage.prototype.initializeItems = function () {
         this.items = [
-            { 'id': '01', 'title': 'Alameda Juan Pablo', 'ruta': 'Ruta 44', 'tarifa': '$0.25 ctvs', 'tiempo': '5 min', 'recorrido': 'De Santa Tecla a San Salvador', 'distancia': '2 km' },
-            { 'id': '02', 'title': 'Boulevard Venezuela', 'ruta': 'Ruta 52', 'tarifa': '$0.25 ctvs', 'tiempo': '20 min', 'recorrido': 'De Santa Tecla al Centro de San Salvador', 'distancia': '10 km' },
-            { 'id': '03', 'title': 'Metrocentro', 'ruta': 'Ruta 108', 'tarifa': '$0.25 ctvs', 'tiempo': '1 min', 'recorrido': 'De Santa Tecla al Centro de San Salvador', 'distancia': '0.5 km' },
-            { 'id': '04', 'title': 'La gran vía', 'ruta': 'Ruta 42-C', 'tarifa': '$0.25 ctvs', 'tiempo': '3 min', 'recorrido': 'De Santa Tecla al Centro de San Salvador', 'distancia': '1 km' },
-            { 'id': '05', 'title': 'Multiplaza', 'ruta': 'Ruta 46', 'tarifa': '$0.76 ctvs', 'tiempo': '10 min', 'recorrido': 'De San Juan Opico a San Salvador', 'distancia': '5 km' },
-            { 'id': '05', 'title': 'Galerías', 'ruta': 'Ruta 101-D', 'tarifa': '$0.76 ctvs', 'tiempo': '10 min', 'recorrido': 'De San Juan Opico a San Salvador', 'distancia': '5 km' },
+            { 'id': '01', 'title': 'Alameda Juan Pablo', 'ruta1': 'Ruta 30-B', 'ruta2': 'Ruta 44', 'tarifa': '$0.25 ctvs', 'tiempo': '5 min', 'recorrido': 'De Santa Tecla a San Salvador', 'distancia': '2 km' },
+            { 'id': '02', 'title': 'Boulevard Venezuela', 'ruta1': 'Ruta 52', 'ruta2': 'Ruta 44', 'tarifa': '$0.25 ctvs', 'tiempo': '20 min', 'recorrido': 'De Santa Tecla al Centro de San Salvador', 'distancia': '10 km' },
+            { 'id': '03', 'title': 'Metrocentro', 'ruta1': 'Ruta 108', 'ruta2': 'Ruta 44', 'tarifa': '$0.25 ctvs', 'tiempo': '1 min', 'recorrido': 'De Santa Tecla al Centro de San Salvador', 'distancia': '0.5 km' },
+            { 'id': '04', 'title': 'La gran vía', 'ruta1': 'Ruta 42-C', 'ruta2': 'Ruta 44', 'tarifa': '$0.25 ctvs', 'tiempo': '3 min', 'recorrido': 'De Santa Tecla al Centro de San Salvador', 'distancia': '1 km' },
+            { 'id': '05', 'title': 'Multiplaza', 'ruta1': 'Ruta 46', 'ruta2': 'Ruta 44', 'tarifa': '$0.76 ctvs', 'tiempo': '10 min', 'recorrido': 'De San Juan Opico a San Salvador', 'distancia': '5 km' },
+            { 'id': '05', 'title': 'Galerías', 'ruta1': 'Ruta 101-D', 'ruta2': 'Ruta 44', 'tarifa': '$0.76 ctvs', 'tiempo': '10 min', 'recorrido': 'De San Juan Opico a San Salvador', 'distancia': '5 km' },
         ];
     };
     PerfilPage.prototype.getItems = function (ev) {
@@ -100,7 +100,7 @@ var PerfilPage = /** @class */ (function () {
     };
     PerfilPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-perfil',template:/*ion-inline-start:"D:\git\TUBUSAPP\TUBUSAPP\src\pages\perfil\perfil.html"*/'<!--\n\n  Generated template for the PerfilPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n    <ion-navbar color="perfil">\n\n      <ion-title>Crear Ruta</ion-title>\n\n    </ion-navbar>\n\n  \n\n  </ion-header>\n\n<ion-content padding>\n\n  <ion-searchbar placeholder="¿A dónde quieres ir?" (ionInput)="getItems($event)"></ion-searchbar>\n\n  <ion-list>\n\n      <ion-item *ngFor="let item of items">\n\n        <h2>{{item.title}}</h2>\n\n        <button ion-button clear item-end (click)="openItem(item)">Ir</button>\n\n      </ion-item>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\git\TUBUSAPP\TUBUSAPP\src\pages\perfil\perfil.html"*/,
+            selector: 'page-perfil',template:/*ion-inline-start:"C:\git\TUBUSAPP\src\pages\perfil\perfil.html"*/'<!--\n\n  Generated template for the PerfilPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n    <ion-navbar color="perfil">\n\n      <ion-title>Crear Ruta</ion-title>\n\n    </ion-navbar>\n\n  \n\n  </ion-header>\n\n<ion-content padding>\n\n  <ion-searchbar placeholder="¿A dónde quieres ir?" (ionInput)="getItems($event)"></ion-searchbar>\n\n  <ion-list>\n\n      <ion-item *ngFor="let item of items">\n\n        <h2>{{item.title}}</h2>\n\n        <button ion-button clear item-end (click)="openItem(item)">Ir</button>\n\n      </ion-item>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\git\TUBUSAPP\src\pages\perfil\perfil.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], PerfilPage);
