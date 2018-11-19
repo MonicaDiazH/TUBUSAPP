@@ -1,6 +1,6 @@
 webpackJsonp([17],{
 
-/***/ 334:
+/***/ 332:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DetalleperfilPageModule", function() { return DetalleperfilPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__detalleperfil__ = __webpack_require__(355);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__detalleperfil__ = __webpack_require__(353);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var DetalleperfilPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 355:
+/***/ 353:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70,6 +70,10 @@ var DetalleperfilPage = /** @class */ (function () {
     function DetalleperfilPage(navCtrl, navParams, item) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.isRunning = false;
+        this.directionService = null;
+        this.directionDsiplay = null;
+        this.bounds = null;
         this.item = navParams.data.item;
     }
     DetalleperfilPage.prototype.ionViewDidLoad = function () {
@@ -90,18 +94,59 @@ var DetalleperfilPage = /** @class */ (function () {
             _this.map = __WEBPACK_IMPORTED_MODULE_3__ionic_native_google_maps__["b" /* GoogleMaps */].create('map_canvas', {
                 camera: {
                     target: myLocation.latLng,
-                    zoom: 16
+                    zoom: 8
                 }
             });
-            var text = ["Current your location:\n",
-                "latitude:" + myLocation.latLng.lat.toFixed(3),
-                "longitude:" + myLocation.latLng.lng.toFixed(3)].join("\n");
             var marker = _this.map.addMarkerSync({
-                title: text,
+                title: "Tú ubicación",
                 position: myLocation.latLng
             });
+            var marker1 = _this.map.addMarkerSync({
+                title: "Destino",
+                position: {
+                    lat: 13.8333000,
+                    lng: -88.9167000
+                }
+            });
+            // Move to the position
+            _this.map.animateCamera({
+                target: {
+                    lat: 13.8333000,
+                    lng: -88.9167000
+                },
+                'zoom': 8
+            }).then(function () {
+                marker.showInfoWindow();
+                marker1.showInfoWindow();
+                //this.isRunning = false;
+            });
+            /*let ubicacion: ILatLng [] = [
+              { lat: 13.68935,
+                lng: -89.18718 },
+              { lat: 13.8333000,
+                lng: -88.9167000}
+            ];
+            this.map.addPolyline({
+              points: ubicacion,
+              color: '#AA00FF',
+              width: 5,
+              geodesic: true,
+              clickable:true,
+            }).then((polyline: Polyline) => {
+              polyline.on(GoogleMapsEvent.POLYLINE_CLICK).subscribe((params: any) => {
+                let position: LatLng = <LatLng>params[0] ;
+                this.map.addMarker({
+                  position: position,
+                  title: position.toUrlValue(),
+                  disableAutoPan: true
+                }).then((marker2: Marker) => {
+                  marker2.showInfoWindow();
+                });
+              });
+            });*/
             //this.map = GoogleMaps.create('map_canvas', mapOptions); 
-            marker.showInfoWindow();
+            //marker.showInfoWindow();
+            //marker1.showInfoWindow();
         });
     };
     DetalleperfilPage = __decorate([

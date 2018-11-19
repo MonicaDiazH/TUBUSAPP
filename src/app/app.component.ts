@@ -8,7 +8,7 @@ import { FirstRunPage } from '../pages';
 import { Settings } from '../providers';
 
 @Component({
-  template: `<ion-menu [content]="content">
+  template: `<ion-menu [content]="content" [swipeEnabled]="false">
     <ion-header>
       <ion-toolbar>
         <ion-title>Pages</ion-title>

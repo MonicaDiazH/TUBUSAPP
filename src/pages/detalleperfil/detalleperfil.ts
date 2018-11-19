@@ -10,7 +10,11 @@ import {
   Marker,
   MyLocation,
   GoogleMapsEvent,
-  MyLocationOptions
+  MyLocationOptions,
+  LatLng,
+  Polyline,
+  ILatLng,
+  GoogleMapsAnimation,
 } from '@ionic-native/google-maps';
 
 /**
@@ -28,9 +32,17 @@ import {
 export class DetalleperfilPage {
   item: any;
   map: GoogleMap;
+  isRunning: boolean = false;
+  directionService: any = null;
+  directionDsiplay: any = null;
+  bounds: any = null;
+  myLatLng: any;
+  waypoints: any[];
+ 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, item: Items) {
     this.item = navParams.data.item;
+    
   }
 
   ionViewDidLoad() {
@@ -55,23 +67,70 @@ export class DetalleperfilPage {
       this.map = GoogleMaps.create('map_canvas', {
          camera: { 
          target: myLocation.latLng,
-         zoom : 16
+         zoom : 8
       }   
     });
    
-    let text = ["Current your location:\n",
-    "latitude:" + myLocation.latLng.lat.toFixed(3),
-    "longitude:" + myLocation.latLng.lng.toFixed(3)].join("\n");
-
     let marker: Marker = this.map.addMarkerSync({
-      title: text,
+      title: "Tú ubicación",
       position: myLocation.latLng
       
     });
 
+    let marker1: Marker = this.map.addMarkerSync({
+      title: "Destino",
+      position: {
+        lat: 13.8333000,
+        lng: -88.9167000
+      }
+      
+    });
+
+    // Move to the position
+    this.map.animateCamera({
+      target: {
+        lat: 13.8333000,
+        lng: -88.9167000
+      },
+      'zoom': 8
+    }).then(() => {
+      marker.showInfoWindow();
+      marker1.showInfoWindow();
+      //this.isRunning = false;
+    });
+
+
+    /*let ubicacion: ILatLng [] = [
+      { lat: 13.68935,
+        lng: -89.18718 },
+      { lat: 13.8333000,
+        lng: -88.9167000}
+    ];
+    this.map.addPolyline({
+      points: ubicacion,
+      color: '#AA00FF',
+      width: 5,
+      geodesic: true,
+      clickable:true,
+    }).then((polyline: Polyline) => {
+      polyline.on(GoogleMapsEvent.POLYLINE_CLICK).subscribe((params: any) => {
+        let position: LatLng = <LatLng>params[0] ;
+        this.map.addMarker({
+          position: position,
+          title: position.toUrlValue(),
+          disableAutoPan: true
+        }).then((marker2: Marker) => {
+          marker2.showInfoWindow();
+        });
+      });
+    });*/
+    
     //this.map = GoogleMaps.create('map_canvas', mapOptions); 
-    marker.showInfoWindow();
-  });
+    //marker.showInfoWindow();
+    //marker1.showInfoWindow();
+
+
+    });
   
   }
 
