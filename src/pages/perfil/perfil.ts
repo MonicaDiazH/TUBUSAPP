@@ -26,12 +26,12 @@ export class PerfilPage {
 
   initializeItems() {
     this.items = [
-      {'id':'01','title':'Alameda Juan Pablo', 'ruta1':'Ruta 30-B', 'ruta2':'Ruta 44','tarifa':'$0.25 ctvs', 'tiempo':'5 min','recorrido':'De Santa Tecla a San Salvador','distancia':'2 km'},
-      {'id':'02','title':'Boulevard Venezuela', 'ruta1':'Ruta 52','ruta2':'Ruta 44','tarifa':'$0.25 ctvs', 'tiempo':'20 min','recorrido':'De Santa Tecla al Centro de San Salvador','distancia':'10 km'},
-      {'id':'03','title':'Metrocentro', 'ruta1':'Ruta 108','ruta2':'Ruta 44','tarifa':'$0.25 ctvs', 'tiempo':'1 min','recorrido':'De Santa Tecla al Centro de San Salvador','distancia':'0.5 km'},
-      {'id':'04','title':'La gran vía', 'ruta1':'Ruta 42-C','ruta2':'Ruta 44','tarifa':'$0.25 ctvs', 'tiempo':'3 min','recorrido':'De Santa Tecla al Centro de San Salvador','distancia':'1 km'},
-      {'id':'05','title':'Multiplaza', 'ruta1':'Ruta 46','ruta2':'Ruta 44','tarifa':'$0.76 ctvs', 'tiempo':'10 min','recorrido':'De San Juan Opico a San Salvador','distancia':'5 km'},
-      {'id':'05','title':'Galerías', 'ruta1':'Ruta 101-D','ruta2':'Ruta 44', 'tarifa':'$0.76 ctvs', 'tiempo':'10 min','recorrido':'De San Juan Opico a San Salvador','distancia':'5 km'},
+      {'id':'01','title':'Alameda Juan Pablo', 'ruta1':'Ruta 30-B', 'ruta2':'Ruta 44','tarifa':'$0.25 ctvs', 'tiempo':'5 min','recorrido':'De Santa Tecla a San Salvador','distancia':'2 km','latitud':'13.710928','longitud':'-89.233770'},
+      {'id':'02','title':'Boulevard Venezuela', 'ruta1':'Ruta 52','ruta2':'Ruta 44','tarifa':'$0.25 ctvs', 'tiempo':'20 min','recorrido':'De Santa Tecla al Centro de San Salvador','distancia':'10 km','latitud':'13.692834','longitud':'-89.201469'},
+      {'id':'03','title':'Metrocentro', 'ruta1':'Ruta 108','ruta2':'Ruta 44','tarifa':'$0.25 ctvs', 'tiempo':'1 min','recorrido':'De Santa Tecla al Centro de San Salvador','distancia':'0.5 km','latitud':'13.705316','longitud':'-89.208283'},
+      {'id':'04','title':'La gran vía', 'ruta1':'Ruta 42-C','ruta2':'Ruta 44','tarifa':'$0.25 ctvs', 'tiempo':'3 min','recorrido':'De Santa Tecla al Centro de San Salvador','distancia':'1 km','latitud':'13.677006','longitud':'-89.254102'},
+      {'id':'05','title':'Multiplaza', 'ruta1':'Ruta 46','ruta2':'Ruta 44','tarifa':'$0.76 ctvs', 'tiempo':'10 min','recorrido':'De San Juan Opico a San Salvador','distancia':'5 km','latitud':'13.679551','longitud':'-89.248611'},
+      {'id':'05','title':'Galerías', 'ruta1':'Ruta 101-D','ruta2':'Ruta 44', 'tarifa':'$0.76 ctvs', 'tiempo':'10 min','recorrido':'De San Juan Opico a San Salvador','distancia':'5 km','latitud':'13.702230','longitud':'-89.229755'},
     ];
   }
 
@@ -51,7 +51,7 @@ export class PerfilPage {
   }
 
   openItem(item) {
-    this.navCtrl.push('DetalleperfilPage', { item: item });
+    this.navCtrl.push('DetalleperfilPage', { item: item, latitud : item.latitud, longitud: item.longitud });
   }
 
   ionViewDidLoad() {

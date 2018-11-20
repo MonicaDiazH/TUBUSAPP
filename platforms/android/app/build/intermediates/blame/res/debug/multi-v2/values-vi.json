@@ -8,9 +8,9 @@
                     "from": {
                         "startLines": "3,18,2,5,4,6,7,8,9,10,11,12,13,14,17,15,16",
                         "startColumns": "2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2",
-                        "startOffsets": "108,2417,53,397,263,618,770,887,1063,1201,1375,1561,1718,1894,2302,2053,2194",
+                        "startOffsets": "111,2435,55,402,267,624,777,895,1072,1211,1386,1573,1731,1908,2319,2068,2210",
                         "endColumns": "154,104,54,220,133,151,116,175,137,173,185,156,175,158,114,140,107",
-                        "endOffsets": "260,2519,105,615,394,767,884,1060,1198,1372,1558,1715,1891,2050,2414,2191,2299"
+                        "endOffsets": "263,2537,107,620,398,773,891,1068,1207,1382,1569,1727,1904,2064,2431,2206,2315"
                     },
                     "to": {
                         "startLines": "20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\clara.varela\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\94221f5eb80efeb24a5866babbb571c9\\res\\values-vi\\values-vi.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "5355",
-                        "endColumns": "100",
-                        "endOffsets": "5451"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\clara.varela\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\908f81610b9ce56ec78b49d98d5d9341\\res\\values-vi\\values.xml",
+                    "source": "C:\\Users\\Clara Varela\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\be8113804c56ee9ea1b804333881986c\\res\\values-vi\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -55,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\clara.varela\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\bfb14776f52f22de4da0ab2176c9e6b8\\res\\values-vi\\values.xml",
+                    "source": "C:\\Users\\Clara Varela\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\8d58a359546c6a52435e9045dde1caa3\\res\\values-vi\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -69,6 +52,23 @@
                         "startOffsets": "105,209,403,530,639,863,995,1152,1480,1720,1829,2021,2153,2371,2550,2648,2742",
                         "endColumns": "103,193,126,108,223,131,156,132,239,108,191,131,217,178,97,93,109",
                         "endOffsets": "204,398,525,634,858,990,1147,1280,1715,1824,2016,2148,2366,2545,2643,2737,2847"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Clara Varela\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\b38b053cfb8547ffba79b260092391e9\\res\\values-vi\\values-vi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "5355",
+                        "endColumns": "100",
+                        "endOffsets": "5451"
                     }
                 }
             ]

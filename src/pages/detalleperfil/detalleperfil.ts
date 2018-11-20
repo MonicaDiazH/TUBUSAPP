@@ -38,11 +38,15 @@ export class DetalleperfilPage {
   bounds: any = null;
   myLatLng: any;
   waypoints: any[];
+  latitud: any;
+  longitud: any;
  
 
   constructor(public navCtrl: NavController, public navParams: NavParams, item: Items) {
     this.item = navParams.data.item;
-    
+    this.latitud = navParams.get("latitud");
+    this.longitud = navParams.get("longitud");
+   
   }
 
   ionViewDidLoad() {
@@ -67,32 +71,30 @@ export class DetalleperfilPage {
       this.map = GoogleMaps.create('map_canvas', {
          camera: { 
          target: myLocation.latLng,
-         zoom : 8
+         zoom : 10
       }   
     });
    
     let marker: Marker = this.map.addMarkerSync({
       title: "Tú ubicación",
-      position: myLocation.latLng
-      
+      position: myLocation.latLng  
     });
 
     let marker1: Marker = this.map.addMarkerSync({
       title: "Destino",
       position: {
-        lat: 13.8333000,
-        lng: -88.9167000
-      }
-      
+        lat: this.latitud,
+        lng: this.longitud,
+      }   
     });
 
     // Move to the position
     this.map.animateCamera({
       target: {
-        lat: 13.8333000,
-        lng: -88.9167000
+        lat: this.latitud,
+        lng: this.longitud,
       },
-      'zoom': 8
+      'zoom': 10
     }).then(() => {
       marker.showInfoWindow();
       marker1.showInfoWindow();
@@ -128,7 +130,6 @@ export class DetalleperfilPage {
     //this.map = GoogleMaps.create('map_canvas', mapOptions); 
     //marker.showInfoWindow();
     //marker1.showInfoWindow();
-
 
     });
   

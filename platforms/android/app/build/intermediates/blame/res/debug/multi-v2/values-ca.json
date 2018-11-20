@@ -4,7 +4,24 @@
             "outputFile": "C:\\git\\TUBUSAPP\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ca\\values-ca.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\clara.varela\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\908f81610b9ce56ec78b49d98d5d9341\\res\\values-ca\\values.xml",
+                    "source": "C:\\Users\\Clara Varela\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\8d58a359546c6a52435e9045dde1caa3\\res\\values-ca\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "245,348,532,657,764,973,1098,1247,1380,1610,1717,1907,2036,2259,2443,2534,2628",
+                        "endColumns": "102,183,124,106,208,124,148,132,229,106,189,128,222,183,90,93,111",
+                        "endOffsets": "347,531,656,763,972,1097,1246,1379,1609,1716,1906,2035,2258,2442,2533,2627,2739"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,212,396,525,636,845,974,1127,1458,1688,1799,1989,2122,2345,2533,2628,2726",
+                        "endColumns": "106,183,128,110,208,128,152,136,229,110,189,132,222,187,94,97,115",
+                        "endOffsets": "207,391,520,631,840,969,1122,1259,1683,1794,1984,2117,2340,2528,2623,2721,2837"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Clara Varela\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\be8113804c56ee9ea1b804333881986c\\res\\values-ca\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\clara.varela\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\94221f5eb80efeb24a5866babbb571c9\\res\\values-ca\\values-ca.xml",
+                    "source": "C:\\Users\\Clara Varela\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\b38b053cfb8547ffba79b260092391e9\\res\\values-ca\\values-ca.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -35,23 +52,6 @@
                         "startOffsets": "2842",
                         "endColumns": "100",
                         "endOffsets": "2938"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\clara.varela\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\bfb14776f52f22de4da0ab2176c9e6b8\\res\\values-ca\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "245,348,532,657,764,973,1098,1247,1380,1610,1717,1907,2036,2259,2443,2534,2628",
-                        "endColumns": "102,183,124,106,208,124,148,132,229,106,189,128,222,183,90,93,111",
-                        "endOffsets": "347,531,656,763,972,1097,1246,1379,1609,1716,1906,2035,2258,2442,2533,2627,2739"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,212,396,525,636,845,974,1127,1458,1688,1799,1989,2122,2345,2533,2628,2726",
-                        "endColumns": "106,183,128,110,208,128,152,136,229,110,189,132,222,187,94,97,115",
-                        "endOffsets": "207,391,520,631,840,969,1122,1259,1683,1794,1984,2117,2340,2528,2623,2721,2837"
                     }
                 }
             ]

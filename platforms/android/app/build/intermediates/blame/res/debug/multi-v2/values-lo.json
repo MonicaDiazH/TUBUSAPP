@@ -4,7 +4,24 @@
             "outputFile": "C:\\git\\TUBUSAPP\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lo\\values-lo.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\clara.varela\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\908f81610b9ce56ec78b49d98d5d9341\\res\\values-lo\\values.xml",
+                    "source": "C:\\Users\\Clara Varela\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\b38b053cfb8547ffba79b260092391e9\\res\\values-lo\\values-lo.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2848",
+                        "endColumns": "100",
+                        "endOffsets": "2944"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Clara Varela\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\be8113804c56ee9ea1b804333881986c\\res\\values-lo\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\clara.varela\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\bfb14776f52f22de4da0ab2176c9e6b8\\res\\values-lo\\values.xml",
+                    "source": "C:\\Users\\Clara Varela\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\8d58a359546c6a52435e9045dde1caa3\\res\\values-lo\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -35,23 +52,6 @@
                         "startOffsets": "105,215,417,549,658,869,996,1134,1470,1681,1788,1985,2116,2346,2537,2635,2734",
                         "endColumns": "109,201,131,108,210,126,137,144,210,106,196,130,229,190,97,98,113",
                         "endOffsets": "210,412,544,653,864,991,1129,1274,1676,1783,1980,2111,2341,2532,2630,2729,2843"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\clara.varela\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\94221f5eb80efeb24a5866babbb571c9\\res\\values-lo\\values-lo.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2848",
-                        "endColumns": "100",
-                        "endOffsets": "2944"
                     }
                 }
             ]

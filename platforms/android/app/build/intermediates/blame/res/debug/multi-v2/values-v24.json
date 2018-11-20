@@ -4,7 +4,7 @@
             "outputFile": "C:\\git\\TUBUSAPP\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\clara.varela\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\8378e84ddbbb78933b58fee2f46014af\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Clara Varela\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\ebf96ecb0c6e1f54e2a2faac3cb82d1e\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

@@ -4,7 +4,7 @@
             "outputFile": "C:\\git\\TUBUSAPP\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-b+sr+Latn\\values-b+sr+Latn.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\clara.varela\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\bfb14776f52f22de4da0ab2176c9e6b8\\res\\values-b+sr+Latn\\values.xml",
+                    "source": "C:\\Users\\Clara Varela\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\8d58a359546c6a52435e9045dde1caa3\\res\\values-b+sr+Latn\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\clara.varela\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\908f81610b9ce56ec78b49d98d5d9341\\res\\values-b+sr+Latn\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "254",
-                        "endColumns": "188",
-                        "endOffsets": "442"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1256",
-                        "endColumns": "188",
-                        "endOffsets": "1440"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\clara.varela\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\94221f5eb80efeb24a5866babbb571c9\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+                    "source": "C:\\Users\\Clara Varela\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\b38b053cfb8547ffba79b260092391e9\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -52,6 +35,23 @@
                         "startOffsets": "2764",
                         "endColumns": "100",
                         "endOffsets": "2860"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Clara Varela\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\be8113804c56ee9ea1b804333881986c\\res\\values-b+sr+Latn\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "254",
+                        "endColumns": "188",
+                        "endOffsets": "442"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1256",
+                        "endColumns": "188",
+                        "endOffsets": "1440"
                     }
                 }
             ]
